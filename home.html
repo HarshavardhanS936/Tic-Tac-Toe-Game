@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="header">
+      <div id="timer">Time: 00:00</div>
+      <button id="pause-btn" onclick="pauseGame()">⏸️</button>
+      <button id="restart-btn" onclick="resetGame()">🔄</button>
+    </div>
+    <div id="game-board">
+      <div class="cell" onclick="makeMove(this, 0)"></div>
+      <div class="cell" onclick="makeMove(this, 1)"></div>
+      <div class="cell" onclick="makeMove(this, 2)"></div>
+      <div class="cell" onclick="makeMove(this, 3)"></div>
+      <div class="cell" onclick="makeMove(this, 4)"></div>
+      <div class="cell" onclick="makeMove(this, 5)"></div>
+      <div class="cell" onclick="makeMove(this, 6)"></div>
+      <div class="cell" onclick="makeMove(this, 7)"></div>
+      <div class="cell" onclick="makeMove(this, 8)"></div>
+    </div>
+    <div id="status"></div>
+    <div id="score">
+      <span>Player X: <span id="score-x">0</span></span>
+      <span>Player O: <span id="score-o">0</span></span>
+    </div>
+    <div id="message-box" style="display: none;">
+      <p id="message-text"></p>
+      <button onclick="closeMessageBox()">OK</button>
+    </div>
+  </div>
+  <script src="home.js"></script>
+</body>
+</html>
